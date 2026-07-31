@@ -1,0 +1,284 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// ============================================================
+// TOPBAR — navegação como abas de editor
+// ============================================================
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: v.$topbar-height;
+  background: v.$color-bg-alt;
+  border-bottom: 1px solid v.$color-border;
+  display: flex;
+  align-items: stretch;
+
+  &__inner {
+    @include m.container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$sp-4;
+  }
+
+  &__brand {
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    color: v.$color-text;
+    display: flex;
+    align-items: center;
+    gap: v.$sp-2;
+    white-space: nowrap;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: v.$color-diff-add;
+      flex-shrink: 0;
+      @include m.motion-safe {
+        animation: pulse-dot 2.4s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.tabs {
+  display: none;
+  align-items: stretch;
+  height: 100%;
+
+  @include m.from(v.$bp-md) {
+    display: flex;
+  }
+
+  &__item {
+    @include m.focus-ring;
+    display: flex;
+    align-items: center;
+    gap: v.$sp-2;
+    padding-inline: v.$sp-4;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    color: v.$color-text-muted;
+    border-right: 1px solid v.$color-border;
+    border-bottom: 2px solid transparent;
+    transition: color v.$transition-fast, background v.$transition-fast;
+
+    &:hover {
+      color: v.$color-text;
+      background: v.$color-panel;
+    }
+
+    &.is-active {
+      color: v.$color-accent;
+      background: v.$color-panel;
+      border-bottom-color: v.$color-accent;
+    }
+
+    .tab-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.6;
+    }
+  }
+}
+
+// Seletor de idioma (topbar, sempre visível)
+.lang-switch {
+  position: relative;
+
+  &__button {
+    @include m.focus-ring;
+    display: flex;
+    align-items: center;
+    gap: v.$sp-2;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    padding: v.$sp-2 v.$sp-3;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius-sm;
+    color: v.$color-text-muted;
+    background: v.$color-panel;
+    transition: border-color v.$transition-fast, color v.$transition-fast;
+
+    &:hover, &[aria-expanded="true"] {
+      color: v.$color-accent;
+      border-color: v.$color-accent;
+    }
+  }
+
+  &__caret {
+    font-size: 0.6rem;
+    transition: transform v.$transition-fast;
+  }
+
+  &__button[aria-expanded="true"] &__caret {
+    transform: rotate(180deg);
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 168px;
+    background: v.$color-panel;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius-md;
+    padding: v.$sp-2;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+
+    &.is-open { display: flex; }
+  }
+
+  &__option {
+    @include m.focus-ring;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$sp-3;
+    padding: v.$sp-2 v.$sp-3;
+    border-radius: v.$radius-sm;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    color: v.$color-text-muted;
+    text-align: left;
+    width: 100%;
+
+    &:hover { background: v.$color-panel-alt; color: v.$color-text; }
+
+    &.is-selected {
+      color: v.$color-accent;
+      &::after {
+        content: '✓';
+        font-size: v.$fs-xs;
+      }
+    }
+  }
+}
+
+// Menu mobile (hambúrguer -> lista de abas)
+.mobile-menu-toggle {
+  @include m.focus-ring;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-sm;
+  color: v.$color-text;
+
+  @include m.from(v.$bp-md) {
+    display: none;
+  }
+
+  span, span::before, span::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+    transition: transform v.$transition-fast, opacity v.$transition-fast;
+  }
+  span::before { position: absolute; top: -5px; }
+  span::after { position: absolute; top: 5px; }
+}
+
+.mobile-menu {
+  @include m.from(v.$bp-md) { display: none; }
+  display: none;
+  flex-direction: column;
+  background: v.$color-bg-alt;
+  border-bottom: 1px solid v.$color-border;
+
+  &.is-open { display: flex; }
+
+  &__item {
+    @include m.focus-ring;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    padding: v.$sp-4 v.$sp-5;
+    color: v.$color-text-muted;
+    border-bottom: 1px solid v.$color-border;
+
+    &.is-active { color: v.$color-accent; }
+  }
+}
+
+// ============================================================
+// STATUS BAR — rodapé estilo VS Code
+// ============================================================
+.statusbar {
+  height: auto;
+  min-height: v.$statusbar-height;
+  background: v.$color-accent;
+  color: v.$color-bg-alt;
+  font-family: v.$font-mono;
+  font-size: v.$fs-xs;
+  font-weight: 600;
+
+  &__inner {
+    @include m.container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$sp-4;
+    padding-block: v.$sp-2;
+    flex-wrap: wrap;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: v.$sp-4;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: v.$sp-1;
+  }
+}
+
+// ============================================================
+// Main wrapper
+// ============================================================
+main {
+  overflow-x: hidden;
+}
+
+.section {
+  padding-block: v.$sp-12;
+  border-bottom: 1px solid v.$color-border;
+
+  &__container {
+    @include m.container;
+  }
+
+  &--tight {
+    padding-block: v.$sp-10;
+  }
+}
+
+.section-title {
+  font-size: v.$fs-2xl;
+  margin-bottom: v.$sp-6;
+
+  @include m.from(v.$bp-md) {
+    font-size: v.$fs-3xl;
+  }
+}

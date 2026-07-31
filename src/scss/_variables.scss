@@ -1,0 +1,65 @@
+// ============================================================
+// DESIGN TOKENS — tema "editor de código"
+// ============================================================
+
+// --- Cores base ---------------------------------------------
+$color-bg:          #0F1419; // fundo principal (tinta escura, não preto puro)
+$color-bg-alt:       #0B0F13; // fundo mais fundo (hero, footer)
+$color-panel:       #161B22; // painéis / cards
+$color-panel-alt:   #1C232C; // hover de painéis
+$color-border:      #2A313C;
+
+$color-text:        #E6EDF3; // texto primário
+$color-text-muted:  #7D8590; // texto secundário
+$color-text-faint:  #4B5563; // comentários / metadados
+
+// --- Acentos (com significado, não decoração) ----------------
+$color-accent:       #4FD1C5; // teal — dados / links / CTA primário
+$color-accent-hover: #7CE0D6;
+$color-amber:         #F2B84B; // âmbar — destaques / warnings
+$color-diff-add:     #6BCB77; // verde — motivo de "diff" (+)
+$color-diff-remove:  #E5534B; // vermelho — motivo de "diff" (-)
+
+// --- Tipografia ------------------------------------------------
+$font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+$font-body:    'Inter', 'Segoe UI', sans-serif;
+$font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+$fs-xs:   0.75rem;
+$fs-sm:   0.875rem;
+$fs-base: 1rem;
+$fs-md:   1.125rem;
+$fs-lg:   1.375rem;
+$fs-xl:   1.75rem;
+$fs-2xl:  2.5rem;
+$fs-3xl:  3.5rem;
+
+// --- Espaçamento (escala 4px) -----------------------------------
+$sp-1: 0.25rem;
+$sp-2: 0.5rem;
+$sp-3: 0.75rem;
+$sp-4: 1rem;
+$sp-5: 1.5rem;
+$sp-6: 2rem;
+$sp-8: 3rem;
+$sp-10: 4rem;
+$sp-12: 6rem;
+$sp-16: 8rem;
+
+// --- Layout -------------------------------------------------
+$max-width: 1120px;
+$radius-sm: 4px;
+$radius-md: 8px;
+$topbar-height: 52px;
+$statusbar-height: 32px;
+
+// --- Transições -----------------------------------------------
+$ease: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fast: 150ms $ease;
+$transition-base: 250ms $ease;
+
+// --- Breakpoints ------------------------------------------------
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

@@ -1,0 +1,72 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.skills {
+  &__file {
+    background: v.$color-panel;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius-md;
+    overflow: hidden;
+  }
+
+  &__filebar {
+    display: flex;
+    align-items: center;
+    gap: v.$sp-2;
+    padding: v.$sp-3 v.$sp-4;
+    background: v.$color-panel-alt;
+    border-bottom: 1px solid v.$color-border;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    color: v.$color-text-faint;
+  }
+
+  &__body {
+    padding: v.$sp-6;
+    display: grid;
+    gap: v.$sp-8;
+
+    @include m.from(v.$bp-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__group {
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+  }
+
+  &__group-title {
+    color: v.$color-amber;
+    margin-bottom: v.$sp-3;
+    font-size: v.$fs-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: v.$sp-2;
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: v.$sp-3;
+    padding: v.$sp-2 0;
+    border-bottom: 1px dashed v.$color-border;
+
+    &:last-child { border-bottom: none; }
+  }
+
+  &__name {
+    color: v.$color-text;
+  }
+
+  &__level {
+    color: v.$color-accent;
+    white-space: nowrap;
+  }
+}

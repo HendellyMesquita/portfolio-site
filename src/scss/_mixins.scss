@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+// Mobile-first media queries
+@mixin from($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
+}
+
+@mixin until($breakpoint) {
+  @media (max-width: ($breakpoint - 1px)) { @content; }
+}
+
+// Foco visível acessível — nunca remover outline sem substituto
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid v.$color-accent;
+    outline-offset: 2px;
+    border-radius: v.$radius-sm;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: v.$max-width;
+  margin-inline: auto;
+  padding-inline: v.$sp-5;
+
+  @include from(v.$bp-md) {
+    padding-inline: v.$sp-8;
+  }
+}
+
+@mixin mono-label {
+  font-family: v.$font-mono;
+  font-size: v.$fs-xs;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+// Respeita usuários que preferem menos movimento
+@mixin motion-safe {
+  @media (prefers-reduced-motion: no-preference) { @content; }
+}

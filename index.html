@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <meta name="description" content="Portfólio de desenvolvedor(a) e analista de sistemas." />
+  <meta name="theme-color" content="#0F1419" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="dist/css/main.css" />
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- TOPBAR — navegação em formato de abas de editor -->
+  <!-- ============================================================ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#home" class="topbar__brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>seu-nome.dev</span>
+      </a>
+
+      <nav class="tabs" aria-label="Navegação principal">
+        <a href="#home" class="tabs__item is-active"><span class="tab-dot" aria-hidden="true"></span><span data-i18n="nav.home">Início</span></a>
+        <a href="#sobre" class="tabs__item"><span class="tab-dot" aria-hidden="true"></span><span data-i18n="nav.about">Sobre</span></a>
+        <a href="#projetos" class="tabs__item"><span class="tab-dot" aria-hidden="true"></span><span data-i18n="nav.projects">Projetos</span></a>
+        <a href="#skills" class="tabs__item"><span class="tab-dot" aria-hidden="true"></span><span data-i18n="nav.skills">Skills</span></a>
+        <a href="#contato" class="tabs__item"><span class="tab-dot" aria-hidden="true"></span><span data-i18n="nav.contact">Contato</span></a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap: 0.75rem;">
+        <!-- Seletor de idioma -->
+        <div class="lang-switch">
+          <button type="button" class="lang-switch__button" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:nav.langSwitchAria">
+            <span aria-hidden="true">🌐</span>
+            <span data-lang-label>pt-BR</span>
+            <span class="lang-switch__caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="lang-switch__menu" role="menu">
+            <button type="button" class="lang-switch__option is-selected" data-lang="pt-BR" role="menuitem">Português (BR)</button>
+            <button type="button" class="lang-switch__option" data-lang="en-GB" role="menuitem">English (UK)</button>
+            <button type="button" class="lang-switch__option" data-lang="es-ES" role="menuitem">Español (ES)</button>
+          </div>
+        </div>
+
+        <!-- Toggle menu mobile -->
+        <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menuToggleAria">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile (abas em lista) -->
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Navegação mobile">
+    <a href="#home" class="mobile-menu__item is-active" data-i18n="nav.home">Início</a>
+    <a href="#sobre" class="mobile-menu__item" data-i18n="nav.about">Sobre</a>
+    <a href="#projetos" class="mobile-menu__item" data-i18n="nav.projects">Projetos</a>
+    <a href="#skills" class="mobile-menu__item" data-i18n="nav.skills">Skills</a>
+    <a href="#contato" class="mobile-menu__item" data-i18n="nav.contact">Contato</a>
+  </nav>
+
+  <main>
+    <!-- ============================================================ -->
+    <!-- HERO -->
+    <!-- ============================================================ -->
+    <section id="home" class="hero">
+      <div class="hero__container">
+        <div>
+          <p class="hero__kicker" data-i18n="hero.kicker">// bem-vindo(a)</p>
+          <h1 class="hero__title" data-i18n-html="hero.title">Olá, eu sou <span class="accent">Seu Nome</span> — desenvolvedor(a) &amp; analista de sistemas</h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Construo aplicações web e transformo dados em decisões. Do backend ao dashboard, do requisito ao deploy.
+          </p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary" data-i18n="hero.ctaPrimary">Ver projetos</a>
+            <a href="#contato" class="btn btn--ghost" data-i18n="hero.ctaSecondary">Falar comigo</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong>5+</strong>
+              <span data-i18n="hero.statYears">anos de experiência</span>
+            </div>
+            <div class="hero__stat">
+              <strong>30+</strong>
+              <span data-i18n="hero.statProjects">projetos entregues</span>
+            </div>
+            <div class="hero__stat">
+              <strong>12</strong>
+              <span data-i18n="hero.statStack">tecnologias no stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal" aria-hidden="false">
+          <div class="terminal__header">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">zsh — ~/portfolio</span>
+          </div>
+          <div class="terminal__body">
+            <div class="terminal__line">
+              <span class="terminal__prompt">$</span>
+              <span data-i18n="hero.terminalCommand">whoami</span>
+            </div>
+            <div class="terminal__line">
+              <span class="terminal__output" data-terminal-output data-i18n="hero.terminalOutput">Seu Nome — Dev &amp; Analista de Sistemas. Curioso(a) por natureza, resolvedor(a) de problemas por profissão.</span><span class="terminal__cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SOBRE -->
+    <!-- ============================================================ -->
+    <section id="sobre" class="section about">
+      <div class="section__container">
+        <p class="section-eyebrow" data-i18n="about.eyebrow">sobre.js</p>
+        <h2 class="section-title" data-i18n="about.title">Sobre mim</h2>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p data-i18n="about.p1">
+              Sou desenvolvedor(a) e analista de sistemas com foco em transformar problemas reais em soluções simples,
+              testáveis e sustentáveis. Gosto tanto de escrever a lógica de negócio quanto de entender os dados que ela produz.
+            </p>
+            <p data-i18n="about.p2">
+              Trabalho confortavelmente do levantamento de requisitos ao deploy, passando por modelagem de dados,
+              APIs, front-end e automações. Valorizo código legível, decisões documentadas e comunicação direta com o time.
+            </p>
+          </div>
+
+          <div class="diff-block">
+            <div class="diff-block__header">git log --oneline -- carreira.md</div>
+            <div class="diff-block__line diff-block__line--context">  analista júnior → suporte a sistemas legados</div>
+            <div class="diff-block__line diff-block__line--remove"><span class="diff-block__sign">-</span><span data-i18n="about.diffRemove">retrabalho manual, planilhas soltas, decisões no achismo</span></div>
+            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span><span data-i18n="about.diffAdd1">automações, pipelines de dados, decisões orientadas por métricas</span></div>
+            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span><span data-i18n="about.diffAdd2">aplicações web de ponta a ponta, com foco em quem usa</span></div>
+            <div class="diff-block__line diff-block__line--context">  hoje → dev &amp; analista de sistemas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SKILLS -->
+    <!-- ============================================================ -->
+    <section id="skills" class="section skills">
+      <div class="section__container">
+        <p class="section-eyebrow" data-i18n="skills.eyebrow">skills.json</p>
+        <h2 class="section-title" data-i18n="skills.title">Skills &amp; stack</h2>
+
+        <div class="skills__file">
+          <div class="skills__filebar">package.json — dependencies</div>
+          <div class="skills__body">
+
+            <div class="skills__group">
+              <p class="skills__group-title" data-i18n="skills.groupLanguages">Linguagens</p>
+              <div class="skills__list">
+                <div class="skills__item"><span class="skills__name">JavaScript</span><span class="skills__level">^5.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Python</span><span class="skills__level">^4.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">SQL</span><span class="skills__level">^5.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">TypeScript</span><span class="skills__level">^3.0.0</span></div>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <p class="skills__group-title" data-i18n="skills.groupFrameworks">Frameworks &amp; libs</p>
+              <div class="skills__list">
+                <div class="skills__item"><span class="skills__name">Node.js / Express</span><span class="skills__level">^4.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">React</span><span class="skills__level">^3.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Django</span><span class="skills__level">^2.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Vue</span><span class="skills__level">^2.0.0</span></div>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <p class="skills__group-title" data-i18n="skills.groupData">Dados &amp; análise</p>
+              <div class="skills__list">
+                <div class="skills__item"><span class="skills__name">Pandas</span><span class="skills__level">^3.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Power BI</span><span class="skills__level">^3.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">PostgreSQL</span><span class="skills__level">^4.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">ETL / Airflow</span><span class="skills__level">^2.0.0</span></div>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <p class="skills__group-title" data-i18n="skills.groupTools">Ferramentas</p>
+              <div class="skills__list">
+                <div class="skills__item"><span class="skills__name">Git / GitHub</span><span class="skills__level">^5.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Docker</span><span class="skills__level">^3.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">CI/CD</span><span class="skills__level">^3.0.0</span></div>
+                <div class="skills__item"><span class="skills__name">Jest / Pytest</span><span class="skills__level">^3.0.0</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROJETOS -->
+    <!-- ============================================================ -->
+    <section id="projetos" class="section projects">
+      <div class="section__container">
+        <p class="section-eyebrow" data-i18n="projects.eyebrow">projetos.js</p>
+        <h2 class="section-title" data-i18n="projects.title">Projetos recentes</h2>
+
+        <div class="projects__grid">
+
+          <article class="commit-card">
+            <div class="commit-card__meta">
+              <span class="commit-card__hash">#a3f9c2</span>
+              <span data-i18n="projects.p1.date">jun. 2026</span>
+            </div>
+            <h3 class="commit-card__title" data-i18n="projects.p1.title">Dashboard de indicadores em tempo real</h3>
+            <p class="commit-card__desc" data-i18n="projects.p1.desc">
+              Painel de métricas operacionais consumindo dados de múltiplas fontes, com atualização automática e alertas.
+            </p>
+            <div class="commit-card__stats">
+              <span class="commit-card__stat-add">+ <span data-i18n="projects.p1.impact">-38% tempo de resposta a incidentes</span></span>
+            </div>
+            <div class="commit-card__tags">
+              <span class="commit-card__tag">React</span>
+              <span class="commit-card__tag">Node.js</span>
+              <span class="commit-card__tag">PostgreSQL</span>
+            </div>
+            <div class="commit-card__links">
+              <a href="#" class="commit-card__link">↗ <span data-i18n="projects.viewLive">ver projeto</span></a>
+              <a href="#" class="commit-card__link">⌥ <span data-i18n="projects.viewCode">código</span></a>
+            </div>
+          </article>
+
+          <article class="commit-card">
+            <div class="commit-card__meta">
+              <span class="commit-card__hash">#e71bd4</span>
+              <span data-i18n="projects.p2.date">fev. 2026</span>
+            </div>
+            <h3 class="commit-card__title" data-i18n="projects.p2.title">Pipeline de ETL para relatórios financeiros</h3>
+            <p class="commit-card__desc" data-i18n="projects.p2.desc">
+              Automação que extrai, trata e consolida dados financeiros de planilhas dispersas em um banco único.
+            </p>
+            <div class="commit-card__stats">
+              <span class="commit-card__stat-add">+ <span data-i18n="projects.p2.impact">12h/semana economizadas</span></span>
+            </div>
+            <div class="commit-card__tags">
+              <span class="commit-card__tag">Python</span>
+              <span class="commit-card__tag">Airflow</span>
+              <span class="commit-card__tag">SQL</span>
+            </div>
+            <div class="commit-card__links">
+              <a href="#" class="commit-card__link">↗ <span data-i18n="projects.viewLive">ver projeto</span></a>
+              <a href="#" class="commit-card__link">⌥ <span data-i18n="projects.viewCode">código</span></a>
+            </div>
+          </article>
+
+          <article class="commit-card">
+            <div class="commit-card__meta">
+              <span class="commit-card__hash">#c02f18</span>
+              <span data-i18n="projects.p3.date">out. 2025</span>
+            </div>
+            <h3 class="commit-card__title" data-i18n="projects.p3.title">API de gestão de estoque multi-loja</h3>
+            <p class="commit-card__desc" data-i18n="projects.p3.desc">
+              API REST para sincronizar estoque entre lojas físicas e e-commerce, com controle de concorrência.
+            </p>
+            <div class="commit-card__stats">
+              <span class="commit-card__stat-add">+ <span data-i18n="projects.p3.impact">zero divergências de estoque</span></span>
+            </div>
+            <div class="commit-card__tags">
+              <span class="commit-card__tag">Django</span>
+              <span class="commit-card__tag">Docker</span>
+              <span class="commit-card__tag">Redis</span>
+            </div>
+            <div class="commit-card__links">
+              <a href="#" class="commit-card__link">↗ <span data-i18n="projects.viewLive">ver projeto</span></a>
+              <a href="#" class="commit-card__link">⌥ <span data-i18n="projects.viewCode">código</span></a>
+            </div>
+          </article>
+
+          <article class="commit-card">
+            <div class="commit-card__meta">
+              <span class="commit-card__hash">#f884ab</span>
+              <span data-i18n="projects.p4.date">mai. 2025</span>
+            </div>
+            <h3 class="commit-card__title" data-i18n="projects.p4.title">Landing page com CMS headless</h3>
+            <p class="commit-card__desc" data-i18n="projects.p4.desc">
+              Site institucional performático, editável pelo time de marketing sem depender de dev.
+            </p>
+            <div class="commit-card__stats">
+              <span class="commit-card__stat-add">+ <span data-i18n="projects.p4.impact">98 no Lighthouse</span></span>
+            </div>
+            <div class="commit-card__tags">
+              <span class="commit-card__tag">Vue</span>
+              <span class="commit-card__tag">SCSS</span>
+              <span class="commit-card__tag">Headless CMS</span>
+            </div>
+            <div class="commit-card__links">
+              <a href="#" class="commit-card__link">↗ <span data-i18n="projects.viewLive">ver projeto</span></a>
+              <a href="#" class="commit-card__link">⌥ <span data-i18n="projects.viewCode">código</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CONTATO -->
+    <!-- ============================================================ -->
+    <section id="contato" class="section contact section--tight">
+      <div class="section__container">
+        <p class="section-eyebrow" data-i18n="contact.eyebrow">contato.md</p>
+        <h2 class="section-title" data-i18n="contact.title">Vamos conversar?</h2>
+
+        <div class="contact__grid">
+          <div>
+            <p class="contact__lead" data-i18n="contact.lead">
+              Aberto(a) a novas oportunidades, projetos freelance e boas conversas sobre dados e desenvolvimento.
+            </p>
+            <div class="contact__links">
+              <a class="contact__link" href="mailto:seu-email@exemplo.com">
+                <span class="label">email</span> seu-email@exemplo.com
+              </a>
+              <a class="contact__link" href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+                <span class="label">linkedin</span> /in/seu-usuario
+              </a>
+              <a class="contact__link" href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+                <span class="label">github</span> /seu-usuario
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-form__field">
+              <label for="name" data-i18n="contact.form.name">Nome</label>
+              <input type="text" id="name" name="name" required data-i18n-attr="placeholder:contact.form.namePlaceholder" placeholder="Como podemos te chamar?" />
+            </div>
+            <div class="contact-form__field">
+              <label for="email" data-i18n="contact.form.email">E-mail</label>
+              <input type="email" id="email" name="email" required data-i18n-attr="placeholder:contact.form.emailPlaceholder" placeholder="voce@exemplo.com" />
+            </div>
+            <div class="contact-form__field">
+              <label for="message" data-i18n="contact.form.message">Mensagem</label>
+              <textarea id="message" name="message" required data-i18n-attr="placeholder:contact.form.messagePlaceholder" placeholder="Conte um pouco sobre o projeto ou oportunidade..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Enviar mensagem</button>
+            <p class="contact-form__note" data-i18n="contact.form.note">// este formulário ainda precisa ser conectado a um backend/serviço de e-mail</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; <span data-current-year>2026</span> — <span data-i18n="footer.rights">todos os direitos reservados</span></span>
+      <span data-i18n="footer.builtWith">construído com HTML, SCSS e JavaScript</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- STATUS BAR — estilo barra de status de editor -->
+  <!-- ============================================================ -->
+  <div class="statusbar">
+    <div class="statusbar__inner">
+      <div class="statusbar__group">
+        <span class="statusbar__item">⎇ main</span>
+        <span class="statusbar__item" data-i18n="footer.statusReady">✓ pronto para novas oportunidades</span>
+      </div>
+      <div class="statusbar__group">
+        <span class="statusbar__item" data-lang-label>pt-BR</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.hero {
+  background: v.$color-bg-alt;
+  padding-block: v.$sp-12 v.$sp-16;
+  border-bottom: 1px solid v.$color-border;
+
+  &__container {
+    @include m.container;
+    display: grid;
+    gap: v.$sp-8;
+
+    @include m.from(v.$bp-lg) {
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: v.$sp-10;
+    }
+  }
+
+  &__kicker {
+    @include m.mono-label;
+    color: v.$color-text-faint;
+    margin-bottom: v.$sp-4;
+  }
+
+  &__title {
+    font-size: v.$fs-2xl;
+    line-height: 1.1;
+    margin-bottom: v.$sp-5;
+
+    @include m.from(v.$bp-md) {
+      font-size: 3rem;
+    }
+
+    .accent { color: v.$color-accent; }
+  }
+
+  &__subtitle {
+    color: v.$color-text-muted;
+    font-size: v.$fs-md;
+    max-width: 46ch;
+    margin-bottom: v.$sp-6;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$sp-3;
+    margin-bottom: v.$sp-8;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: v.$sp-6;
+    font-family: v.$font-mono;
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    gap: v.$sp-1;
+
+    strong {
+      font-size: v.$fs-xl;
+      color: v.$color-text;
+    }
+    span {
+      font-size: v.$fs-xs;
+      color: v.$color-text-faint;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+  }
+}
+
+// --- Janela de terminal simulada ------------------------------
+.terminal {
+  background: v.$color-panel;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-md;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: v.$sp-2;
+    padding: v.$sp-3 v.$sp-4;
+    background: v.$color-panel-alt;
+    border-bottom: 1px solid v.$color-border;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    &--red { background: #E5534B; }
+    &--yellow { background: #F2B84B; }
+    &--green { background: #6BCB77; }
+  }
+
+  &__title {
+    margin-left: v.$sp-2;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    color: v.$color-text-faint;
+  }
+
+  &__body {
+    padding: v.$sp-5;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    line-height: 1.8;
+    min-height: 190px;
+  }
+
+  &__line {
+    display: flex;
+    gap: v.$sp-2;
+    flex-wrap: wrap;
+  }
+
+  &__prompt {
+    color: v.$color-accent;
+    flex-shrink: 0;
+  }
+
+  &__output {
+    color: v.$color-text-muted;
+    white-space: pre-wrap;
+  }
+
+  &__cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.1em;
+    background: v.$color-accent;
+    vertical-align: text-bottom;
+    margin-left: 2px;
+
+    @include m.motion-safe {
+      animation: blink 1s step-end infinite;
+    }
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

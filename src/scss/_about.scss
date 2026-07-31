@@ -1,0 +1,67 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.about {
+  &__grid {
+    display: grid;
+    gap: v.$sp-8;
+
+    @include m.from(v.$bp-lg) {
+      grid-template-columns: 1fr 1fr;
+      gap: v.$sp-10;
+    }
+  }
+
+  &__text {
+    color: v.$color-text-muted;
+    font-size: v.$fs-md;
+
+    p { margin-bottom: v.$sp-4; }
+    strong { color: v.$color-text; font-weight: 600; }
+  }
+}
+
+// Bloco "diff" — usado para destacar transição de carreira / valores
+.diff-block {
+  font-family: v.$font-mono;
+  font-size: v.$fs-sm;
+  background: v.$color-panel;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-md;
+  overflow: hidden;
+
+  &__header {
+    padding: v.$sp-3 v.$sp-4;
+    background: v.$color-panel-alt;
+    color: v.$color-text-faint;
+    border-bottom: 1px solid v.$color-border;
+    font-size: v.$fs-xs;
+  }
+
+  &__line {
+    display: flex;
+    gap: v.$sp-3;
+    padding: v.$sp-2 v.$sp-4;
+    border-left: 3px solid transparent;
+
+    &--add {
+      background: rgba(107, 203, 119, 0.08);
+      border-left-color: v.$color-diff-add;
+      color: v.$color-diff-add;
+    }
+    &--remove {
+      background: rgba(229, 83, 75, 0.08);
+      border-left-color: v.$color-diff-remove;
+      color: v.$color-diff-remove;
+      opacity: 0.7;
+    }
+    &--context {
+      color: v.$color-text-muted;
+    }
+  }
+
+  &__sign {
+    flex-shrink: 0;
+    opacity: 0.7;
+  }
+}

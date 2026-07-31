@@ -1,0 +1,87 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+body {
+  background: v.$color-bg;
+  color: v.$color-text;
+  font-family: v.$font-body;
+  font-size: v.$fs-base;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: v.$font-display;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: v.$color-accent;
+  color: v.$color-bg;
+}
+
+// Scrollbar temático (webkit) — fallback silencioso em outros engines
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: v.$color-bg-alt; }
+::-webkit-scrollbar-thumb {
+  background: v.$color-border;
+  border-radius: 10px;
+  &:hover { background: v.$color-text-faint; }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.section-eyebrow {
+  @include m.mono-label;
+  color: v.$color-accent;
+  display: flex;
+  align-items: center;
+  gap: v.$sp-2;
+  margin-bottom: v.$sp-3;
+
+  &::before {
+    content: '//';
+    color: v.$color-text-faint;
+  }
+}
+
+.btn {
+  @include m.focus-ring;
+  display: inline-flex;
+  align-items: center;
+  gap: v.$sp-2;
+  font-family: v.$font-mono;
+  font-size: v.$fs-sm;
+  padding: v.$sp-3 v.$sp-5;
+  border-radius: v.$radius-sm;
+  border: 1px solid v.$color-border;
+  transition: border-color v.$transition-fast, background v.$transition-fast, transform v.$transition-fast;
+
+  &:hover { transform: translateY(-1px); }
+
+  &--primary {
+    background: v.$color-accent;
+    color: v.$color-bg-alt;
+    border-color: v.$color-accent;
+    font-weight: 600;
+
+    &:hover { background: v.$color-accent-hover; }
+  }
+
+  &--ghost {
+    color: v.$color-text;
+    &:hover {
+      border-color: v.$color-accent;
+      color: v.$color-accent;
+    }
+  }
+}

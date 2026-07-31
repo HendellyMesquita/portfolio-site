@@ -1,0 +1,105 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.contact {
+  &__grid {
+    display: grid;
+    gap: v.$sp-8;
+
+    @include m.from(v.$bp-lg) {
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+  }
+
+  &__lead {
+    color: v.$color-text-muted;
+    font-size: v.$fs-md;
+    margin-bottom: v.$sp-6;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: v.$sp-3;
+  }
+
+  &__link {
+    @include m.focus-ring;
+    display: flex;
+    align-items: center;
+    gap: v.$sp-3;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    color: v.$color-text;
+    padding: v.$sp-3;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius-sm;
+    transition: border-color v.$transition-fast, color v.$transition-fast;
+
+    &:hover { border-color: v.$color-accent; color: v.$color-accent; }
+
+    .label { color: v.$color-text-faint; }
+  }
+}
+
+.contact-form {
+  background: v.$color-panel;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-md;
+  padding: v.$sp-6;
+  display: flex;
+  flex-direction: column;
+  gap: v.$sp-4;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: v.$sp-2;
+  }
+
+  label {
+    @include m.mono-label;
+    color: v.$color-text-faint;
+  }
+
+  input, textarea {
+    background: v.$color-bg-alt;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius-sm;
+    padding: v.$sp-3;
+    color: v.$color-text;
+    font-family: v.$font-body;
+    font-size: v.$fs-sm;
+    transition: border-color v.$transition-fast;
+
+    &:focus-visible {
+      outline: none;
+      border-color: v.$color-accent;
+    }
+  }
+
+  textarea { resize: vertical; min-height: 120px; }
+
+  &__note {
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    color: v.$color-text-faint;
+  }
+}
+
+footer.footer {
+  background: v.$color-bg-alt;
+
+  &__inner {
+    @include m.container;
+    padding-block: v.$sp-6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: v.$sp-4;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    color: v.$color-text-faint;
+  }
+}

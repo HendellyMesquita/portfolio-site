@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Your Name — Developer & Systems Analyst",
+    "description": "Your Name's portfolio: web development and data analysis, from requirement to deployment."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "langSwitchAria": "Select language",
+    "menuToggleAria": "Open navigation menu"
+  },
+  "hero": {
+    "kicker": "// welcome",
+    "title": "Hi, I'm <span class=\"accent\">Your Name</span> — developer &amp; systems analyst",
+    "subtitle": "I build web applications and turn data into decisions. From backend to dashboard, from requirement to deployment.",
+    "ctaPrimary": "View projects",
+    "ctaSecondary": "Get in touch",
+    "statYears": "years of experience",
+    "statProjects": "projects delivered",
+    "statStack": "technologies in the stack",
+    "terminalCommand": "whoami",
+    "terminalOutput": "Your Name — Dev & Systems Analyst. Curious by nature, problem-solver by trade."
+  },
+  "about": {
+    "eyebrow": "about.js",
+    "title": "About me",
+    "p1": "I'm a developer and systems analyst focused on turning real problems into simple, testable and sustainable solutions. I enjoy writing business logic just as much as understanding the data it produces.",
+    "p2": "I work comfortably from requirements gathering to deployment, covering data modelling, APIs, front-end and automation. I value readable code, documented decisions and direct communication with the team.",
+    "diffRemove": "manual rework, scattered spreadsheets, decisions based on guesswork",
+    "diffAdd1": "automation, data pipelines, decisions driven by metrics",
+    "diffAdd2": "end-to-end web applications, built with the user in mind"
+  },
+  "skills": {
+    "eyebrow": "skills.json",
+    "title": "Skills & stack",
+    "groupLanguages": "Languages",
+    "groupFrameworks": "Frameworks & libraries",
+    "groupData": "Data & analysis",
+    "groupTools": "Tools"
+  },
+  "projects": {
+    "eyebrow": "projects.js",
+    "title": "Recent projects",
+    "viewLive": "view project",
+    "viewCode": "code",
+    "p1": {
+      "date": "Jun 2026",
+      "title": "Real-time metrics dashboard",
+      "desc": "Operational metrics panel pulling data from multiple sources, with automatic refresh and alerts.",
+      "impact": "-38% incident response time"
+    },
+    "p2": {
+      "date": "Feb 2026",
+      "title": "ETL pipeline for financial reports",
+      "desc": "Automation that extracts, cleans and consolidates financial data from scattered spreadsheets into a single database.",
+      "impact": "12h/week saved"
+    },
+    "p3": {
+      "date": "Oct 2025",
+      "title": "Multi-store inventory management API",
+      "desc": "REST API to sync inventory between physical stores and e-commerce, with concurrency control.",
+      "impact": "zero stock discrepancies"
+    },
+    "p4": {
+      "date": "May 2025",
+      "title": "Landing page with headless CMS",
+      "desc": "High-performance corporate site, editable by the marketing team without relying on a developer.",
+      "impact": "98 on Lighthouse"
+    }
+  },
+  "contact": {
+    "eyebrow": "contact.md",
+    "title": "Let's talk?",
+    "lead": "Open to new opportunities, freelance projects and good conversations about data and development.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "What should we call you?",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me a bit about the project or opportunity...",
+      "submit": "Send message",
+      "note": "// this form still needs to be connected to a backend/email service"
+    }
+  },
+  "footer": {
+    "rights": "all rights reserved",
+    "builtWith": "built with HTML, SCSS and JavaScript",
+    "statusReady": "✓ open to new opportunities"
+  }
+}

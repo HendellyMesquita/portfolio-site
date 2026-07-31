@@ -1,0 +1,97 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.projects {
+  &__grid {
+    display: grid;
+    gap: v.$sp-5;
+
+    @include m.from(v.$bp-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.commit-card {
+  @include m.focus-ring;
+  background: v.$color-panel;
+  border: 1px solid v.$color-border;
+  border-radius: v.$radius-md;
+  padding: v.$sp-5;
+  display: flex;
+  flex-direction: column;
+  gap: v.$sp-4;
+  transition: border-color v.$transition-fast, transform v.$transition-fast;
+
+  &:hover {
+    border-color: v.$color-accent;
+    transform: translateY(-3px);
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+    color: v.$color-text-faint;
+  }
+
+  &__hash {
+    color: v.$color-amber;
+  }
+
+  &__title {
+    font-size: v.$fs-lg;
+    color: v.$color-text;
+  }
+
+  &__desc {
+    color: v.$color-text-muted;
+    font-size: v.$fs-sm;
+    flex-grow: 1;
+  }
+
+  &__stats {
+    display: flex;
+    gap: v.$sp-4;
+    font-family: v.$font-mono;
+    font-size: v.$fs-xs;
+  }
+
+  &__stat-add { color: v.$color-diff-add; }
+  &__stat-remove { color: v.$color-diff-remove; }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$sp-2;
+  }
+
+  &__tag {
+    @include m.mono-label;
+    padding: 2px v.$sp-2;
+    border: 1px solid v.$color-border;
+    border-radius: 999px;
+    color: v.$color-text-muted;
+  }
+
+  &__links {
+    display: flex;
+    gap: v.$sp-4;
+    font-family: v.$font-mono;
+    font-size: v.$fs-sm;
+    padding-top: v.$sp-2;
+    border-top: 1px solid v.$color-border;
+  }
+
+  &__link {
+    @include m.focus-ring;
+    color: v.$color-accent;
+    display: inline-flex;
+    align-items: center;
+    gap: v.$sp-1;
+
+    &:hover { color: v.$color-accent-hover; }
+  }
+}

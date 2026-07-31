@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Tu Nombre — Desarrollador(a) y Analista de Sistemas",
+    "description": "Portfolio de Tu Nombre: desarrollo web y análisis de datos, desde el requisito hasta el despliegue."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "langSwitchAria": "Seleccionar idioma",
+    "menuToggleAria": "Abrir menú de navegación"
+  },
+  "hero": {
+    "kicker": "// bienvenido(a)",
+    "title": "Hola, soy <span class=\"accent\">Tu Nombre</span> — desarrollador(a) &amp; analista de sistemas",
+    "subtitle": "Construyo aplicaciones web y convierto datos en decisiones. Del backend al panel, del requisito al despliegue.",
+    "ctaPrimary": "Ver proyectos",
+    "ctaSecondary": "Hablemos",
+    "statYears": "años de experiencia",
+    "statProjects": "proyectos entregados",
+    "statStack": "tecnologías en el stack",
+    "terminalCommand": "whoami",
+    "terminalOutput": "Tu Nombre — Dev y Analista de Sistemas. Curioso(a) por naturaleza, solucionador(a) de problemas de profesión."
+  },
+  "about": {
+    "eyebrow": "sobre-mi.js",
+    "title": "Sobre mí",
+    "p1": "Soy desarrollador(a) y analista de sistemas, centrado(a) en convertir problemas reales en soluciones simples, comprobables y sostenibles. Disfruto tanto escribiendo la lógica de negocio como entendiendo los datos que esta genera.",
+    "p2": "Trabajo con soltura desde el levantamiento de requisitos hasta el despliegue, pasando por el modelado de datos, APIs, front-end y automatizaciones. Valoro el código legible, las decisiones documentadas y la comunicación directa con el equipo.",
+    "diffRemove": "retrabajo manual, hojas de cálculo dispersas, decisiones a ojo",
+    "diffAdd1": "automatizaciones, pipelines de datos, decisiones basadas en métricas",
+    "diffAdd2": "aplicaciones web de principio a fin, pensadas para quien las usa"
+  },
+  "skills": {
+    "eyebrow": "habilidades.json",
+    "title": "Habilidades y stack",
+    "groupLanguages": "Lenguajes",
+    "groupFrameworks": "Frameworks y librerías",
+    "groupData": "Datos y análisis",
+    "groupTools": "Herramientas"
+  },
+  "projects": {
+    "eyebrow": "proyectos.js",
+    "title": "Proyectos recientes",
+    "viewLive": "ver proyecto",
+    "viewCode": "código",
+    "p1": {
+      "date": "jun. 2026",
+      "title": "Panel de indicadores en tiempo real",
+      "desc": "Panel de métricas operativas que consume datos de múltiples fuentes, con actualización automática y alertas.",
+      "impact": "-38% tiempo de respuesta a incidentes"
+    },
+    "p2": {
+      "date": "feb. 2026",
+      "title": "Pipeline de ETL para informes financieros",
+      "desc": "Automatización que extrae, depura y consolida datos financieros de hojas de cálculo dispersas en una única base de datos.",
+      "impact": "12h/semana ahorradas"
+    },
+    "p3": {
+      "date": "oct. 2025",
+      "title": "API de gestión de inventario multitienda",
+      "desc": "API REST para sincronizar el inventario entre tiendas físicas y comercio electrónico, con control de concurrencia.",
+      "impact": "cero discrepancias de inventario"
+    },
+    "p4": {
+      "date": "may. 2025",
+      "title": "Landing page con CMS headless",
+      "desc": "Sitio corporativo de alto rendimiento, editable por el equipo de marketing sin depender de un desarrollador.",
+      "impact": "98 en Lighthouse"
+    }
+  },
+  "contact": {
+    "eyebrow": "contacto.md",
+    "title": "¿Hablamos?",
+    "lead": "Abierto(a) a nuevas oportunidades, proyectos freelance y buenas conversaciones sobre datos y desarrollo.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "¿Cómo te llamamos?",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame un poco sobre el proyecto u oportunidad...",
+      "submit": "Enviar mensaje",
+      "note": "// este formulario todavía debe conectarse a un backend/servicio de correo"
+    }
+  },
+  "footer": {
+    "rights": "todos los derechos reservados",
+    "builtWith": "creado con HTML, SCSS y JavaScript",
+    "statusReady": "✓ disponible para nuevas oportunidades"
+  }
+}

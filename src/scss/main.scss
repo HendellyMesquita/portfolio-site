@@ -1,0 +1,15 @@
+// ============================================================
+// main.scss — ponto de entrada
+// Compilar com: npm run sass:build  (ou sass:watch em dev)
+// ============================================================
+
+@use 'reset';
+@use 'variables';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'hero';
+@use 'about';
+@use 'skills';
+@use 'projects';
+@use 'contact';
