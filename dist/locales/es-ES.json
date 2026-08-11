@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Hendelly Mesquita — Analista de Desarrollo de Software y Dev Full Stack",
+    "description": "Portfolio de Hendelly Mesquita: desarrollo full stack para el ecosistema SAP, desde el análisis hasta el despliegue."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "langSwitchAria": "Seleccionar idioma",
+    "menuToggleAria": "Abrir menú de navegación",
+    "mainAriaLabel": "Navegación principal",
+    "mobileAriaLabel": "Navegación móvil"
+  },
+  "hero": {
+    "kicker": "// bienvenido(a)",
+    "title": "Hola, soy <span class=\"accent\">Hendelly Mesquita</span> — Analista de Desarrollo de Software &amp; Dev Full Stack",
+    "subtitle": "Desarrollo soluciones para el ecosistema SAP centradas en la gestión fiscal y financiera — de sistemas de escritorio a aplicaciones en la nube, siempre con pruebas y código sostenible.",
+    "ctaPrimary": "Ver proyectos",
+    "ctaSecondary": "Hablemos",
+    "statYears": "años de experiencia",
+    "statTech": "tecnologías en el stack",
+    "statFocus": "ecosistema fiscal y financiero",
+    "terminalCommand": "whoami",
+    "terminalOutput": "Hendelly Mesquita — Analista de Desarrollo de Software y Dev Full Stack en Invent Software. Curiosa por naturaleza, solucionadora de problemas de profesión."
+  },
+  "about": {
+    "eyebrow": "sobre-mi.js",
+    "title": "Sobre mí",
+    "p1": "Soy Analista de Desarrollo de Software y Desarrolladora Full Stack en <strong>Invent Software</strong>, empresa especializada en add-ons para el ecosistema SAP centrada en la gestión fiscal y financiera. Desde noviembre de 2021, trabajo desde el levantamiento de requisitos hasta la entrega, integrando sistemas de escritorio, aplicaciones en la nube y APIs externas.",
+    "p2": "Soy Técnica Superior en Análisis y Desarrollo de Sistemas por la Universidade Estácio de Sá, con formación complementaria en cursos online. Trabajo con C#, JavaScript, TypeScript, SQL y SAPUI5, siempre buscando código comprobable (TDD) y soluciones sostenibles dentro de equipos con alcances definidos de forma colaborativa.",
+    "diffHeader": "git log --oneline -- carrera.md",
+    "diffContext1": "  ingreso en Invent Software (nov/2021)",
+    "diffRemove": "alcance limitado a ajustes puntuales en sistemas heredados",
+    "diffAdd1": "integración de principio a fin con el ecosistema SAP — escritorio, nube y APIs",
+    "diffAdd2": "práctica de TDD y colaboración en equipo con alcances definidos en conjunto",
+    "diffContext2": "  hoy → Analista de Desarrollo de Software y Dev Full Stack"
+  },
+  "skills": {
+    "eyebrow": "habilidades.json",
+    "title": "Habilidades y stack",
+    "filebar": "package.json — dependencias",
+    "groupLanguages": "Lenguajes de programación",
+    "groupFrameworks": "Frameworks y librerías",
+    "groupData": "Bases de datos",
+    "groupMethodology": "Metodologías",
+    "groupArchitecture": "Arquitectura",
+    "groupSpoken": "Idiomas",
+    "methodology1": "TDD (Test-Driven Development)",
+    "methodology2": "Trabajo en equipo, alcance colaborativo",
+    "methodology3": "Integración con APIs y webservices",
+    "architecture1": "Sistemas de escritorio (Windows Forms) integrados con ERP SAP",
+    "architecture2": "Aplicaciones en la nube con SAPUI5",
+    "architecture3": "Aplicaciones multiplataforma (móvil + escritorio)",
+    "spokenPt": "Portugués",
+    "spokenEs": "Español",
+    "spokenEn": "Inglés",
+    "levelAdvanced": "avanzado",
+    "levelBasic": "básico",
+    "levelIntermediate": "intermedio",
+    "levelBasicIntermediate": "básico/intermedio",
+    "levelNative": "nativo"
+  },
+  "projects": {
+    "eyebrow": "proyectos.js",
+    "title": "Proyectos recientes",
+    "viewLive": "ver proyecto",
+    "viewCode": "código",
+    "confidentialNote": "// proyecto interno — pantallas sustituidas por mockups fieles, sin datos reales",
+    "tagCrossPlatform": "Multiplataforma",
+    "p1": {
+      "status": "producción · Invent Software",
+      "title": "Sistema de gestión financiera de escritorio integrado con SAP",
+      "desc": "Aplicación Windows Forms para la gestión fiscal y financiera integrada con el ecosistema SAP, con soporte a múltiples instituciones bancarias en los módulos de pago, cobro, conciliación de tarjetas y extracto bancario.",
+      "impact": "múltiples instituciones bancarias atendidas"
+    },
+    "p2": {
+      "status": "producción · Invent Software",
+      "title": "Aplicación en la nube para el ecosistema SAP",
+      "desc": "Aplicación en la nube construida con SAPUI5 y RavenDB, ampliando el acceso a funcionalidades fiscales y financieras más allá del entorno de escritorio.",
+      "impact": "acceso móvil/web a funciones antes limitadas al escritorio"
+    },
+    "p3": {
+      "status": "en desarrollo · proyecto personal",
+      "title": "Gestión de inventario multiplataforma",
+      "desc": "Aplicación personal para el control de inventario, con backend en Python y frontend en React, pensada para funcionar en móvil y web a partir de una base de código compartida.",
+      "impact": "proyecto en construcción — detalles próximamente"
+    }
+  },
+  "contact": {
+    "eyebrow": "contacto.md",
+    "title": "¿Hablamos?",
+    "lead": "Abierta a nuevas oportunidades, proyectos freelance y buenas conversaciones sobre desarrollo y el ecosistema SAP.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "¿Cómo te llamamos?",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame un poco sobre el proyecto u oportunidad...",
+      "submit": "Enviar mensaje",
+      "note": "// este formulario todavía debe conectarse a un backend/servicio de correo"
+    }
+  },
+  "footer": {
+    "rights": "todos los derechos reservados",
+    "builtWith": "creado con HTML, SCSS y JavaScript",
+    "statusReady": "✓ disponible para nuevas oportunidades"
+  }
+}

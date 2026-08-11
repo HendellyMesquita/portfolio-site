@@ -8,11 +8,14 @@
     "sass:watch": "sass src/scss/main.scss dist/css/main.css --watch --source-map",
     "serve": "live-server --port=5500 --no-browser",
     "dev": "concurrently -k -n SASS,SERVE -c cyan,yellow \"npm:sass:watch\" \"npm:serve\"",
-    "build": "npm run sass:build"
+    "build:html": "node scripts/build.mjs",
+    "build": "npm run sass:build && npm run build:html",
+    "preview": "live-server dist --port=5501 --no-browser"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
     "live-server": "^1.2.2",
+    "node-html-parser": "^9.0.1",
     "sass": "^1.77.0"
   }
 }

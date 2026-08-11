@@ -1,0 +1,9 @@
+{ //TODO:
+  "siteUrl": "https://example.com",
+  "_comment": "Atualize siteUrl assim que souber onde o site será publicado (GitHub Pages, Netlify, domínio próprio...). Usado para canonical, og:url, robots.txt e sitemap.xml no build de produção.",
+  "social": {
+    "linkedin": "https://linkedin.com/in/seu-usuario",
+    "github": "https://github.com/seu-usuario",
+    "email": "seu-email@exemplo.com"
+  }
+}
