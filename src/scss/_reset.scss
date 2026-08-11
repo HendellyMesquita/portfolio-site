@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -10,6 +12,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(#{v.$topbar-height} + #{v.$sp-4}); // compensa a topbar fixa ao navegar por âncora
 }
 
 @media (prefers-reduced-motion: reduce) {

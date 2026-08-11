@@ -12,7 +12,8 @@
     "langSwitchAria": "Seleccionar idioma",
     "menuToggleAria": "Abrir menú de navegación",
     "mainAriaLabel": "Navegación principal",
-    "mobileAriaLabel": "Navegación móvil"
+    "mobileAriaLabel": "Navegación móvil",
+    "skipToContent": "Saltar al contenido"
   },
   "hero": {
     "kicker": "// bienvenido(a)",
@@ -87,7 +88,8 @@
       "title": "Gestión de inventario multiplataforma",
       "desc": "Aplicación personal para el control de inventario, con backend en Python y frontend en React, pensada para funcionar en móvil y web a partir de una base de código compartida.",
       "impact": "proyecto en construcción — detalles próximamente"
-    }
+    },
+    "comingSoonNote": "// repositorio y enlace de demostración próximamente"
   },
   "contact": {
     "eyebrow": "contacto.md",
@@ -101,7 +103,8 @@
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntame un poco sobre el proyecto u oportunidad...",
       "submit": "Enviar mensaje",
-      "note": "// este formulario todavía debe conectarse a un backend/servicio de correo"
+      "note": "// este formulario todavía debe conectarse a un backend/servicio de correo",
+      "pendingNotice": "Este formulario todavía no está conectado a un servicio de envío — por ahora, usa el correo o LinkedIn al lado. ✕"
     }
   },
   "footer": {

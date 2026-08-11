@@ -32,6 +32,11 @@ function initActiveTabOnScroll() {
     tabLinks.forEach((link) => {
       const match = link.getAttribute('href') === `#${id}`;
       link.classList.toggle('is-active', match);
+      if (match) {
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('aria-current');
+      }
     });
   };
 

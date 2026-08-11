@@ -140,4 +140,9 @@ function getCurrentLang() {
   return currentLang;
 }
 
-export { initI18n, setLanguage, getCurrentLang, SUPPORTED_LANGS };
+/** Busca uma tradução específica por chave, sem precisar de um elemento data-i18n no DOM. */
+function getTranslation(key) {
+  return resolveKey(currentTranslations, key);
+}
+
+export { initI18n, setLanguage, getCurrentLang, getTranslation, SUPPORTED_LANGS };

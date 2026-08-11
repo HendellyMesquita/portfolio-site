@@ -12,7 +12,8 @@
     "langSwitchAria": "Select language",
     "menuToggleAria": "Open navigation menu",
     "mainAriaLabel": "Main navigation",
-    "mobileAriaLabel": "Mobile navigation"
+    "mobileAriaLabel": "Mobile navigation",
+    "skipToContent": "Skip to content"
   },
   "hero": {
     "kicker": "// welcome",
@@ -87,7 +88,8 @@
       "title": "Cross-platform inventory management",
       "desc": "Personal application for inventory control, with a Python back-end and React front-end, designed to run on mobile and web from a shared codebase.",
       "impact": "work in progress — details coming soon"
-    }
+    },
+    "comingSoonNote": "// repository and live link coming soon"
   },
   "contact": {
     "eyebrow": "contact.md",
@@ -101,7 +103,8 @@
       "message": "Message",
       "messagePlaceholder": "Tell me a bit about the project or opportunity...",
       "submit": "Send message",
-      "note": "// this form still needs to be connected to a backend/email service"
+      "note": "// this form still needs to be connected to a backend/email service",
+      "pendingNotice": "This form isn't connected to a sending service yet — for now, please use the email or LinkedIn on the side. ✕"
     }
   },
   "footer": {

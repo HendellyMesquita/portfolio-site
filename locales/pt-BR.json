@@ -12,7 +12,8 @@
     "langSwitchAria": "Selecionar idioma",
     "menuToggleAria": "Abrir menu de navegação",
     "mainAriaLabel": "Navegação principal",
-    "mobileAriaLabel": "Navegação mobile"
+    "mobileAriaLabel": "Navegação mobile",
+    "skipToContent": "Pular para o conteúdo"
   },
   "hero": {
     "kicker": "// bem-vinda(o)",
@@ -87,7 +88,8 @@
       "title": "Gestão de estoque multiplataforma",
       "desc": "Aplicação pessoal para controle de estoque, com back-end em Python e front-end em React, pensada para funcionar em mobile e web a partir de uma base de código compartilhada.",
       "impact": "projeto em construção — detalhes em breve"
-    }
+    },
+    "comingSoonNote": "// repositório e link de demonstração em breve"
   },
   "contact": {
     "eyebrow": "contato.md",
@@ -101,7 +103,8 @@
       "message": "Mensagem",
       "messagePlaceholder": "Conte um pouco sobre o projeto ou oportunidade...",
       "submit": "Enviar mensagem",
-      "note": "// este formulário ainda precisa ser conectado a um backend/serviço de e-mail"
+      "note": "// este formulário ainda precisa ser conectado a um backend/serviço de e-mail",
+      "pendingNotice": "Este formulário ainda não está conectado a um serviço de envio — por enquanto, use o e-mail ou LinkedIn ao lado. ✕"
     }
   },
   "footer": {

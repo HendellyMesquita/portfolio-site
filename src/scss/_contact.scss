@@ -84,6 +84,10 @@
     font-family: v.$font-mono;
     font-size: v.$fs-xs;
     color: v.$color-text-faint;
+
+    &--pending {
+      color: v.$color-amber;
+    }
   }
 }
 
