@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Seu Nome — Desenvolvedor(a) & Analista de Sistemas",
-    "description": "Portfólio de Seu Nome: desenvolvimento web e análise de dados, do requisito ao deploy."
+    "title": "Hendelly Mesquita — Analista de Desenvolvimento de Software & Dev Full Stack",
+    "description": "Portfólio de Hendelly Mesquita: desenvolvimento full stack para o ecossistema SAP, da análise ao deploy."
   },
   "nav": {
     "home": "Início",
@@ -10,71 +10,89 @@
     "skills": "Skills",
     "contact": "Contato",
     "langSwitchAria": "Selecionar idioma",
-    "menuToggleAria": "Abrir menu de navegação"
+    "menuToggleAria": "Abrir menu de navegação",
+    "mainAriaLabel": "Navegação principal",
+    "mobileAriaLabel": "Navegação mobile"
   },
   "hero": {
-    "kicker": "// bem-vindo(a)",
-    "title": "Olá, eu sou <span class=\"accent\">Seu Nome</span> — desenvolvedor(a) &amp; analista de sistemas",
-    "subtitle": "Construo aplicações web e transformo dados em decisões. Do backend ao dashboard, do requisito ao deploy.",
+    "kicker": "// bem-vinda(o)",
+    "title": "Olá, eu sou <span class=\"accent\">Hendelly Mesquita</span> — Analista de Desenvolvimento de Software &amp; Dev Full Stack",
+    "subtitle": "Desenvolvo soluções para o ecossistema SAP com foco em gestão fiscal e financeira — de sistemas desktop a aplicações cloud, sempre com testes e código sustentável.",
     "ctaPrimary": "Ver projetos",
     "ctaSecondary": "Falar comigo",
     "statYears": "anos de experiência",
-    "statProjects": "projetos entregues",
-    "statStack": "tecnologias no stack",
+    "statTech": "tecnologias no stack",
+    "statFocus": "ecossistema fiscal & financeiro",
     "terminalCommand": "whoami",
-    "terminalOutput": "Seu Nome — Dev & Analista de Sistemas. Curioso(a) por natureza, resolvedor(a) de problemas por profissão."
+    "terminalOutput": "Hendelly Mesquita — Analista de Desenvolvimento de Software & Dev Full Stack na Invent Software. Curiosa por natureza, resolvedora de problemas por profissão."
   },
   "about": {
     "eyebrow": "sobre.js",
     "title": "Sobre mim",
-    "p1": "Sou desenvolvedor(a) e analista de sistemas com foco em transformar problemas reais em soluções simples, testáveis e sustentáveis. Gosto tanto de escrever a lógica de negócio quanto de entender os dados que ela produz.",
-    "p2": "Trabalho confortavelmente do levantamento de requisitos ao deploy, passando por modelagem de dados, APIs, front-end e automações. Valorizo código legível, decisões documentadas e comunicação direta com o time.",
-    "diffRemove": "retrabalho manual, planilhas soltas, decisões no achismo",
-    "diffAdd1": "automações, pipelines de dados, decisões orientadas por métricas",
-    "diffAdd2": "aplicações web de ponta a ponta, com foco em quem usa"
+    "p1": "Sou Analista de Desenvolvimento de Software e Desenvolvedora Full Stack na <strong>Invent Software</strong>, empresa especializada em add-ons para o ecossistema SAP com foco em gestão fiscal e financeira. Desde novembro de 2021, atuo do levantamento de requisitos à entrega, integrando sistemas desktop, aplicações cloud e APIs externas.",
+    "p2": "Sou Tecnóloga em Análise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá, com formação complementar em cursos online. Trabalho com C#, JavaScript, TypeScript, SQL e SAPUI5, sempre buscando código testável (TDD) e soluções sustentáveis dentro de squads com escopos definidos colaborativamente.",
+    "diffHeader": "git log --oneline -- carreira.md",
+    "diffContext1": "  ingresso na Invent Software (nov/2021)",
+    "diffRemove": "escopo limitado a ajustes pontuais em sistemas legados",
+    "diffAdd1": "integração ponta a ponta com o ecossistema SAP — desktop, cloud e APIs",
+    "diffAdd2": "prática de TDD e colaboração em squad com escopos definidos em conjunto",
+    "diffContext2": "  hoje → Analista de Desenvolvimento de Software & Dev Full Stack"
   },
   "skills": {
     "eyebrow": "skills.json",
     "title": "Skills & stack",
-    "groupLanguages": "Linguagens",
-    "groupFrameworks": "Frameworks & libs",
-    "groupData": "Dados & análise",
-    "groupTools": "Ferramentas"
+    "filebar": "package.json — dependências",
+    "groupLanguages": "Linguagens de programação",
+    "groupFrameworks": "Frameworks & bibliotecas",
+    "groupData": "Banco de dados",
+    "groupMethodology": "Metodologias",
+    "groupArchitecture": "Arquitetura",
+    "groupSpoken": "Idiomas",
+    "methodology1": "TDD (Test-Driven Development)",
+    "methodology2": "Trabalho em squad, escopo colaborativo",
+    "methodology3": "Integração com APIs & webservices",
+    "architecture1": "Sistemas desktop (Windows Forms) integrados a ERP SAP",
+    "architecture2": "Aplicações cloud com SAPUI5",
+    "architecture3": "Aplicações multiplataforma (mobile + desktop)",
+    "spokenPt": "Português",
+    "spokenEs": "Espanhol",
+    "spokenEn": "Inglês",
+    "levelAdvanced": "avançado",
+    "levelBasic": "básico",
+    "levelIntermediate": "intermediário",
+    "levelBasicIntermediate": "básico/intermediário",
+    "levelNative": "nativo"
   },
   "projects": {
     "eyebrow": "projetos.js",
     "title": "Projetos recentes",
     "viewLive": "ver projeto",
     "viewCode": "código",
+    "confidentialNote": "// projeto interno — telas substituídas por mockups fiéis, sem dados reais",
+    "tagCrossPlatform": "Multiplataforma",
     "p1": {
-      "date": "jun. 2026",
-      "title": "Dashboard de indicadores em tempo real",
-      "desc": "Painel de métricas operacionais consumindo dados de múltiplas fontes, com atualização automática e alertas.",
-      "impact": "-38% tempo de resposta a incidentes"
+      "status": "produção · Invent Software",
+      "title": "Sistema de gestão financeira desktop integrado ao SAP",
+      "desc": "Aplicação Windows Forms para gestão fiscal e financeira integrada ao ecossistema SAP, com suporte a múltiplas instituições bancárias nos módulos de pagamento, cobrança, conciliação de cartões e extrato bancário.",
+      "impact": "múltiplas instituições bancárias atendidas"
     },
     "p2": {
-      "date": "fev. 2026",
-      "title": "Pipeline de ETL para relatórios financeiros",
-      "desc": "Automação que extrai, trata e consolida dados financeiros de planilhas dispersas em um banco único.",
-      "impact": "12h/semana economizadas"
+      "status": "produção · Invent Software",
+      "title": "Aplicação cloud para o ecossistema SAP",
+      "desc": "Aplicação cloud construída com SAPUI5 e RavenDB, ampliando o acesso a funcionalidades fiscais e financeiras para além do ambiente desktop.",
+      "impact": "acesso mobile/web a funcionalidades antes restritas ao desktop"
     },
     "p3": {
-      "date": "out. 2025",
-      "title": "API de gestão de estoque multi-loja",
-      "desc": "API REST para sincronizar estoque entre lojas físicas e e-commerce, com controle de concorrência.",
-      "impact": "zero divergências de estoque"
-    },
-    "p4": {
-      "date": "mai. 2025",
-      "title": "Landing page com CMS headless",
-      "desc": "Site institucional performático, editável pelo time de marketing sem depender de dev.",
-      "impact": "98 no Lighthouse"
+      "status": "em desenvolvimento · projeto pessoal",
+      "title": "Gestão de estoque multiplataforma",
+      "desc": "Aplicação pessoal para controle de estoque, com back-end em Python e front-end em React, pensada para funcionar em mobile e web a partir de uma base de código compartilhada.",
+      "impact": "projeto em construção — detalhes em breve"
     }
   },
   "contact": {
     "eyebrow": "contato.md",
     "title": "Vamos conversar?",
-    "lead": "Aberto(a) a novas oportunidades, projetos freelance e boas conversas sobre dados e desenvolvimento.",
+    "lead": "Aberta a novas oportunidades, projetos freelance e boas conversas sobre desenvolvimento e o ecossistema SAP.",
     "form": {
       "name": "Nome",
       "namePlaceholder": "Como podemos te chamar?",
@@ -89,6 +107,6 @@
   "footer": {
     "rights": "todos os direitos reservados",
     "builtWith": "construído com HTML, SCSS e JavaScript",
-    "statusReady": "✓ pronto para novas oportunidades"
+    "statusReady": "✓ aberta a novas oportunidades"
   }
 }

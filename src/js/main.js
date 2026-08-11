@@ -1,6 +1,7 @@
 import { initI18n, setLanguage, getCurrentLang } from './i18n.js';
 import { initMobileMenu, initActiveTabOnScroll, initLangDropdown, reflectActiveLang } from './nav.js';
 import { primeTerminal } from './terminal.js';
+import { updateExperienceStats } from './experience.js';
 
 function setFooterYear() {
   const el = document.querySelector('[data-current-year]');
@@ -18,6 +19,7 @@ document.addEventListener('i18n:applied', () => {
 
 async function bootstrap() {
   setFooterYear();
+  updateExperienceStats();
   initMobileMenu();
   initActiveTabOnScroll();
   initLangDropdown(handleLangSelect);

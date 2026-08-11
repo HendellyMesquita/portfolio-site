@@ -94,4 +94,9 @@
 
     &:hover { color: v.$color-accent-hover; }
   }
+
+  &__note {
+    color: v.$color-text-faint;
+    font-style: normal;
+  }
 }

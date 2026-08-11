@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Your Name — Developer & Systems Analyst",
-    "description": "Your Name's portfolio: web development and data analysis, from requirement to deployment."
+    "title": "Hendelly Mesquita — Software Development Analyst & Full Stack Developer",
+    "description": "Hendelly Mesquita's portfolio: full stack development for the SAP ecosystem, from analysis to deployment."
   },
   "nav": {
     "home": "Home",
@@ -10,71 +10,89 @@
     "skills": "Skills",
     "contact": "Contact",
     "langSwitchAria": "Select language",
-    "menuToggleAria": "Open navigation menu"
+    "menuToggleAria": "Open navigation menu",
+    "mainAriaLabel": "Main navigation",
+    "mobileAriaLabel": "Mobile navigation"
   },
   "hero": {
     "kicker": "// welcome",
-    "title": "Hi, I'm <span class=\"accent\">Your Name</span> — developer &amp; systems analyst",
-    "subtitle": "I build web applications and turn data into decisions. From backend to dashboard, from requirement to deployment.",
+    "title": "Hi, I'm <span class=\"accent\">Hendelly Mesquita</span> — Software Development Analyst &amp; Full Stack Developer",
+    "subtitle": "I build solutions for the SAP ecosystem focused on fiscal and financial management — from desktop systems to cloud applications, always with testing and sustainable code.",
     "ctaPrimary": "View projects",
     "ctaSecondary": "Get in touch",
     "statYears": "years of experience",
-    "statProjects": "projects delivered",
-    "statStack": "technologies in the stack",
+    "statTech": "technologies in the stack",
+    "statFocus": "fiscal & financial ecosystem",
     "terminalCommand": "whoami",
-    "terminalOutput": "Your Name — Dev & Systems Analyst. Curious by nature, problem-solver by trade."
+    "terminalOutput": "Hendelly Mesquita — Software Development Analyst & Full Stack Developer at Invent Software. Curious by nature, problem-solver by trade."
   },
   "about": {
     "eyebrow": "about.js",
     "title": "About me",
-    "p1": "I'm a developer and systems analyst focused on turning real problems into simple, testable and sustainable solutions. I enjoy writing business logic just as much as understanding the data it produces.",
-    "p2": "I work comfortably from requirements gathering to deployment, covering data modelling, APIs, front-end and automation. I value readable code, documented decisions and direct communication with the team.",
-    "diffRemove": "manual rework, scattered spreadsheets, decisions based on guesswork",
-    "diffAdd1": "automation, data pipelines, decisions driven by metrics",
-    "diffAdd2": "end-to-end web applications, built with the user in mind"
+    "p1": "I'm a Software Development Analyst and Full Stack Developer at <strong>Invent Software</strong>, a company specialising in add-ons for the SAP ecosystem focused on fiscal and financial management. Since November 2021, I've worked from requirements gathering to delivery, integrating desktop systems, cloud applications and external APIs.",
+    "p2": "I hold a degree in Systems Analysis and Development from Universidade Estácio de Sá, with additional online coursework. I work with C#, JavaScript, TypeScript, SQL and SAPUI5, always aiming for testable code (TDD) and sustainable solutions within squads with collaboratively defined scopes.",
+    "diffHeader": "git log --oneline -- career.md",
+    "diffContext1": "  joined Invent Software (Nov/2021)",
+    "diffRemove": "scope limited to ad-hoc fixes on legacy systems",
+    "diffAdd1": "end-to-end integration with the SAP ecosystem — desktop, cloud and APIs",
+    "diffAdd2": "TDD practice and squad collaboration with jointly defined scopes",
+    "diffContext2": "  today → Software Development Analyst & Full Stack Developer"
   },
   "skills": {
     "eyebrow": "skills.json",
     "title": "Skills & stack",
-    "groupLanguages": "Languages",
+    "filebar": "package.json — dependencies",
+    "groupLanguages": "Programming languages",
     "groupFrameworks": "Frameworks & libraries",
-    "groupData": "Data & analysis",
-    "groupTools": "Tools"
+    "groupData": "Databases",
+    "groupMethodology": "Methodologies",
+    "groupArchitecture": "Architecture",
+    "groupSpoken": "Languages",
+    "methodology1": "TDD (Test-Driven Development)",
+    "methodology2": "Squad-based teamwork, collaboratively defined scope",
+    "methodology3": "Integration with APIs & webservices",
+    "architecture1": "Desktop systems (Windows Forms) integrated with SAP ERP",
+    "architecture2": "Cloud applications with SAPUI5",
+    "architecture3": "Cross-platform applications (mobile + desktop)",
+    "spokenPt": "Portuguese",
+    "spokenEs": "Spanish",
+    "spokenEn": "English",
+    "levelAdvanced": "advanced",
+    "levelBasic": "basic",
+    "levelIntermediate": "intermediate",
+    "levelBasicIntermediate": "basic/intermediate",
+    "levelNative": "native"
   },
   "projects": {
     "eyebrow": "projects.js",
     "title": "Recent projects",
     "viewLive": "view project",
     "viewCode": "code",
+    "confidentialNote": "// internal project — screens replaced with faithful mockups, no real data",
+    "tagCrossPlatform": "Cross-platform",
     "p1": {
-      "date": "Jun 2026",
-      "title": "Real-time metrics dashboard",
-      "desc": "Operational metrics panel pulling data from multiple sources, with automatic refresh and alerts.",
-      "impact": "-38% incident response time"
+      "status": "production · Invent Software",
+      "title": "SAP-integrated desktop financial management system",
+      "desc": "Windows Forms application for fiscal and financial management integrated with the SAP ecosystem, supporting multiple banking institutions across payment, billing, card reconciliation and bank statement modules.",
+      "impact": "multiple banking institutions supported"
     },
     "p2": {
-      "date": "Feb 2026",
-      "title": "ETL pipeline for financial reports",
-      "desc": "Automation that extracts, cleans and consolidates financial data from scattered spreadsheets into a single database.",
-      "impact": "12h/week saved"
+      "status": "production · Invent Software",
+      "title": "Cloud application for the SAP ecosystem",
+      "desc": "Cloud application built with SAPUI5 and RavenDB, extending access to fiscal and financial features beyond the desktop environment.",
+      "impact": "mobile/web access to features previously desktop-only"
     },
     "p3": {
-      "date": "Oct 2025",
-      "title": "Multi-store inventory management API",
-      "desc": "REST API to sync inventory between physical stores and e-commerce, with concurrency control.",
-      "impact": "zero stock discrepancies"
-    },
-    "p4": {
-      "date": "May 2025",
-      "title": "Landing page with headless CMS",
-      "desc": "High-performance corporate site, editable by the marketing team without relying on a developer.",
-      "impact": "98 on Lighthouse"
+      "status": "in development · personal project",
+      "title": "Cross-platform inventory management",
+      "desc": "Personal application for inventory control, with a Python back-end and React front-end, designed to run on mobile and web from a shared codebase.",
+      "impact": "work in progress — details coming soon"
     }
   },
   "contact": {
     "eyebrow": "contact.md",
     "title": "Let's talk?",
-    "lead": "Open to new opportunities, freelance projects and good conversations about data and development.",
+    "lead": "Open to new opportunities, freelance projects and good conversations about development and the SAP ecosystem.",
     "form": {
       "name": "Name",
       "namePlaceholder": "What should we call you?",
