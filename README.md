@@ -39,6 +39,20 @@ de LinkedIn/GitHub — hoje estão como placeholder e o build avisa isso no term
 npm run preview   # serve dist/ isoladamente em http://127.0.0.1:5501, pra testar o artefato final
 ```
 
+## Deploy no Cloudflare Pages
+
+1. Suba este repositório pro GitHub (pode ser privado).
+2. No [dashboard da Cloudflare](https://dash.cloudflare.com) → Workers & Pages → **Create application** → **Pages** → **Connect to Git**.
+3. Selecione o repositório e configure:
+   - **Framework preset:** None
+   - **Build command:** `npm run build`
+   - **Build output directory:** `dist`
+4. Deploy. A Cloudflare vai te dar uma URL `https://<nome-do-projeto>.pages.dev`.
+5. **Atualize `site.config.json`** com essa URL exata em `siteUrl` (o nome do projeto que você escolher no passo 3 define o subdomínio) e rode `npm run build` de novo antes do próximo deploy — isso corrige canonical, Open Graph, robots.txt e sitemap.xml.
+6. Se/quando conectar um domínio próprio: Pages → seu projeto → **Custom domains**, e repita o passo 5 com a URL final.
+
+Cada novo `git push` na branch principal dispara um novo build+deploy automaticamente.
+
 ## Estrutura
 
 ```

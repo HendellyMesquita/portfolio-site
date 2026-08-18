@@ -88,6 +88,12 @@
     &--pending {
       color: v.$color-amber;
     }
+    &--success {
+      color: v.$color-diff-add;
+    }
+    &--error {
+      color: v.$color-diff-remove;
+    }
   }
 }
 

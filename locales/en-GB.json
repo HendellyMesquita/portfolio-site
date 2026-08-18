@@ -70,7 +70,6 @@
     "viewLive": "view project",
     "viewCode": "code",
     "confidentialNote": "// internal project — screens replaced with faithful mockups, no real data",
-    "tagCrossPlatform": "Cross-platform",
     "p1": {
       "status": "production · Invent Software",
       "title": "SAP-integrated desktop financial management system",
@@ -84,12 +83,11 @@
       "impact": "mobile/web access to features previously desktop-only"
     },
     "p3": {
-      "status": "in development · personal project",
-      "title": "Cross-platform inventory management",
-      "desc": "Personal application for inventory control, with a Python back-end and React front-end, designed to run on mobile and web from a shared codebase.",
-      "impact": "work in progress — details coming soon"
-    },
-    "comingSoonNote": "// repository and live link coming soon"
+      "status": "personal project",
+      "title": "Store registration system (MVC)",
+      "desc": "Store registration system built in C# with MVC architecture (ASP.NET) — a personal project to practise layered organisation outside the SAP context.",
+      "impact": "MVC architecture applied end-to-end"
+    }
   },
   "contact": {
     "eyebrow": "contact.md",
@@ -104,7 +102,9 @@
       "messagePlaceholder": "Tell me a bit about the project or opportunity...",
       "submit": "Send message",
       "note": "// this form still needs to be connected to a backend/email service",
-      "pendingNotice": "This form isn't connected to a sending service yet — for now, please use the email or LinkedIn on the side. ✕"
+      "sendingMessage": "Sending...",
+      "successMessage": "Message sent! I'll get back to you soon. ✓",
+      "errorMessage": "Couldn't send it right now — please try again or use the email above."
     }
   },
   "footer": {

@@ -13,8 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" 
-        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="dist/css/main.css" />
 </head>
@@ -43,26 +42,20 @@
       <div style="display:flex; align-items:center; gap: 0.75rem;">
         <!-- Seletor de idioma -->
         <div class="lang-switch">
-          <button type="button" class="lang-switch__button" aria-haspopup="true" 
-            aria-expanded="false" data-i18n-attr="aria-label:nav.langSwitchAria">
+          <button type="button" class="lang-switch__button" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:nav.langSwitchAria">
             <span aria-hidden="true">🌐</span>
             <span data-lang-label>pt-BR</span>
             <span class="lang-switch__caret" aria-hidden="true">▾</span>
           </button>
           <div class="lang-switch__menu" role="menu">
-            <button type="button" class="lang-switch__option is-selected" 
-              data-lang="pt-BR" role="menuitem">Português (BR)</button>
-            <button type="button" class="lang-switch__option" 
-              data-lang="en-GB" role="menuitem">English (UK)</button>
-            <button type="button" class="lang-switch__option" 
-              data-lang="es-ES" role="menuitem">Español (ES)</button>
+            <button type="button" class="lang-switch__option is-selected" data-lang="pt-BR" role="menuitem">Português (BR)</button>
+            <button type="button" class="lang-switch__option" data-lang="en-GB" role="menuitem">English (UK)</button>
+            <button type="button" class="lang-switch__option" data-lang="es-ES" role="menuitem">Español (ES)</button>
           </div>
         </div>
 
         <!-- Toggle menu mobile -->
-        <button type="button" class="mobile-menu-toggle" 
-          aria-expanded="false" aria-controls="mobile-menu" 
-          data-i18n-attr="aria-label:nav.menuToggleAria">
+        <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menuToggleAria">
           <span aria-hidden="true"></span>
         </button>
       </div>
@@ -121,8 +114,7 @@
               <span data-i18n="hero.terminalCommand"></span>
             </div>
             <div class="terminal__line">
-              <span class="terminal__output" data-terminal-output data-i18n="hero.terminalOutput"></span>
-              <span class="terminal__cursor" aria-hidden="true"></span>
+              <span class="terminal__output" data-terminal-output data-i18n="hero.terminalOutput"></span><span class="terminal__cursor" aria-hidden="true"></span>
             </div>
           </div>
         </div>
@@ -146,12 +138,9 @@
           <div class="diff-block">
             <div class="diff-block__header" data-i18n="about.diffHeader"></div>
             <div class="diff-block__line diff-block__line--context" data-i18n="about.diffContext1"></div>
-            <div class="diff-block__line diff-block__line--remove"><span class="diff-block__sign">-</span>
-              <span data-i18n="about.diffRemove"></span></div>
-            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span>
-              <span data-i18n="about.diffAdd1"></span></div>
-            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span>
-              <span data-i18n="about.diffAdd2"></span></div>
+            <div class="diff-block__line diff-block__line--remove"><span class="diff-block__sign">-</span><span data-i18n="about.diffRemove"></span></div>
+            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span><span data-i18n="about.diffAdd1"></span></div>
+            <div class="diff-block__line diff-block__line--add"><span class="diff-block__sign">+</span><span data-i18n="about.diffAdd2"></span></div>
             <div class="diff-block__line diff-block__line--context" data-i18n="about.diffContext2"></div>
           </div>
         </div>
@@ -173,18 +162,12 @@
             <div class="skills__group">
               <p class="skills__group-title" data-i18n="skills.groupLanguages"></p>
               <div class="skills__list">
-                <div class="skills__item"><span class="skills__name">C#</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">JavaScript</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">SQL</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">XML</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">TypeScript</span>
-                  <span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
-                <div class="skills__item"><span class="skills__name">Python</span>
-                  <span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
+                <div class="skills__item"><span class="skills__name">C#</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">JavaScript</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">SQL</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">XML</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">TypeScript</span><span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
+                <div class="skills__item"><span class="skills__name">Python</span><span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
               </div>
             </div>
 
@@ -200,14 +183,10 @@
             <div class="skills__group">
               <p class="skills__group-title" data-i18n="skills.groupData"></p>
               <div class="skills__list">
-                <div class="skills__item"><span class="skills__name">SQL Server</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">RavenDB (NoSQL)</span>
-                  <span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
-                <div class="skills__item"><span class="skills__name">SAP HANA</span>
-                  <span class="skills__level" data-i18n="skills.levelBasic"></span></div>
-                <div class="skills__item"><span class="skills__name">SQLite</span>
-                  <span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
+                <div class="skills__item"><span class="skills__name">SQL Server</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">RavenDB (NoSQL)</span><span class="skills__level" data-i18n="skills.levelAdvanced"></span></div>
+                <div class="skills__item"><span class="skills__name">SAP HANA</span><span class="skills__level" data-i18n="skills.levelBasic"></span></div>
+                <div class="skills__item"><span class="skills__name">SQLite</span><span class="skills__level" data-i18n="skills.levelBasicIntermediate"></span></div>
               </div>
             </div>
 
@@ -232,12 +211,9 @@
             <div class="skills__group">
               <p class="skills__group-title" data-i18n="skills.groupSpoken"></p>
               <div class="skills__list">
-                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenPt"></span>
-                  <span class="skills__level" data-i18n="skills.levelNative"></span></div>
-                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenEs"></span>
-                  <span class="skills__level" data-i18n="skills.levelIntermediate"></span></div>
-                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenEn"></span>
-                  <span class="skills__level" data-i18n="skills.levelBasic"></span></div>
+                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenPt"></span><span class="skills__level" data-i18n="skills.levelNative"></span></div>
+                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenEs"></span><span class="skills__level" data-i18n="skills.levelIntermediate"></span></div>
+                <div class="skills__item"><span class="skills__name" data-i18n="skills.spokenEn"></span><span class="skills__level" data-i18n="skills.levelBasic"></span></div>
               </div>
             </div>
 
@@ -307,12 +283,11 @@
               <span class="commit-card__stat-add">+ <span data-i18n="projects.p3.impact"></span></span>
             </div>
             <div class="commit-card__tags">
-              <span class="commit-card__tag">Python</span>
-              <span class="commit-card__tag">React</span>
-              <span class="commit-card__tag" data-i18n="projects.tagCrossPlatform"></span>
+              <span class="commit-card__tag">C#</span>
+              <span class="commit-card__tag">ASP.NET MVC</span>
             </div>
             <div class="commit-card__links">
-              <span class="commit-card__note" data-i18n="projects.comingSoonNote"></span>
+              <a href="https://github.com/HendellyMesquita/Sales_Web" class="commit-card__link" target="_blank" rel="noopener">⌥ <span data-i18n="projects.viewCode"></span></a>
             </div>
           </article>
 
@@ -332,37 +307,34 @@
           <div>
             <p class="contact__lead" data-i18n="contact.lead"></p>
             <div class="contact__links">
-              <a class="contact__link" href="mailto:seu-email@exemplo.com">
-                <span class="label">email</span> seu-email@exemplo.com
+              <a class="contact__link" href="mailto:lorrany.s.mesquita@gmail.com">
+                <span class="label">email</span> lorrany.s.mesquita@gmail.com
               </a>
-              <a class="contact__link" href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
-                <span class="label">linkedin</span> /in/seu-usuario
+              <a class="contact__link" href="https://linkedin.com/in/hendellymesquita" target="_blank" rel="noopener">
+                <span class="label">linkedin</span> /in/hendellymesquita
               </a>
-              <a class="contact__link" href="https://github.com/seu-usuario" target="_blank" rel="noopener">
-                <span class="label">github</span> /seu-usuario
+              <a class="contact__link" href="https://github.com/HendellyMesquita" target="_blank" rel="noopener">
+                <span class="label">github</span> /HendellyMesquita
               </a>
             </div>
           </div>
 
-          <form class="contact-form" id="contact-form" action="#" method="post">
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4474a4d0-818c-46f9-93d9-3b5741b056df" />
+            <input type="hidden" name="subject" value="Novo contato via portfólio — Hendelly Mesquita" />
+            <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" />
+
             <div class="contact-form__field">
               <label for="name" data-i18n="contact.form.name"></label>
-              <input type="text" id="name" name="name" 
-              required data-i18n-attr="placeholder:contact.form.namePlaceholder" 
-              placeholder="" />
+              <input type="text" id="name" name="name" required data-i18n-attr="placeholder:contact.form.namePlaceholder" placeholder="" />
             </div>
             <div class="contact-form__field">
               <label for="email" data-i18n="contact.form.email"></label>
-              <input type="email" id="email" name="email" 
-              required data-i18n-attr="placeholder:contact.form.emailPlaceholder"
-               placeholder="" />
+              <input type="email" id="email" name="email" required data-i18n-attr="placeholder:contact.form.emailPlaceholder" placeholder="" />
             </div>
             <div class="contact-form__field">
               <label for="message" data-i18n="contact.form.message"></label>
-              <textarea id="message" name="message" 
-                required data-i18n-attr="placeholder:contact.form.messagePlaceholder" 
-                placeholder="">
-              </textarea>
+              <textarea id="message" name="message" required data-i18n-attr="placeholder:contact.form.messagePlaceholder" placeholder=""></textarea>
             </div>
             <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit"></button>
             <p class="contact-form__note" id="contact-form-note" aria-live="polite" data-i18n="contact.form.note"></p>

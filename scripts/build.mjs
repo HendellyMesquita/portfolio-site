@@ -229,9 +229,16 @@ function build() {
   console.log(`  - index.html (pré-renderizado em ${DEFAULT_LANG}, SEO + i18n embutido)`);
   console.log('  - css/, js/, locales/, assets/');
   console.log('  - robots.txt, sitemap.xml');
-  if (siteUrl.includes('example.com')) {
-    console.log('\n⚠ site.config.json ainda usa a siteUrl placeholder (example.com).');
-    console.log('  Atualize antes de publicar — afeta canonical, og:url, robots.txt e sitemap.xml.');
+
+  const pending = [];
+  if (siteUrl.includes('example.com')) pending.push('siteUrl (ainda genérica, sem projeto real do Cloudflare Pages)');
+  if ((config.social?.linkedin || '').includes('seu-usuario')) pending.push('social.linkedin');
+  if ((config.social?.github || '').includes('seu-usuario')) pending.push('social.github');
+  if ((config.social?.email || '').includes('exemplo.com')) pending.push('social.email');
+  if (pending.length) {
+    console.log('\n⚠ site.config.json ainda tem placeholders pendentes:');
+    pending.forEach((p) => console.log(`  - ${p}`));
+    console.log('  Isso afeta canonical, og:url, robots.txt, sitemap.xml e o JSON-LD (sameAs).');
   }
 }
 

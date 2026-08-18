@@ -70,7 +70,6 @@
     "viewLive": "ver proyecto",
     "viewCode": "código",
     "confidentialNote": "// proyecto interno — pantallas sustituidas por mockups fieles, sin datos reales",
-    "tagCrossPlatform": "Multiplataforma",
     "p1": {
       "status": "producción · Invent Software",
       "title": "Sistema de gestión financiera de escritorio integrado con SAP",
@@ -84,12 +83,11 @@
       "impact": "acceso móvil/web a funciones antes limitadas al escritorio"
     },
     "p3": {
-      "status": "en desarrollo · proyecto personal",
-      "title": "Gestión de inventario multiplataforma",
-      "desc": "Aplicación personal para el control de inventario, con backend en Python y frontend en React, pensada para funcionar en móvil y web a partir de una base de código compartida.",
-      "impact": "proyecto en construcción — detalles próximamente"
-    },
-    "comingSoonNote": "// repositorio y enlace de demostración próximamente"
+      "status": "proyecto personal",
+      "title": "Sistema de registro para tiendas (MVC)",
+      "desc": "Sistema de registro para tiendas construido en C# con arquitectura MVC (ASP.NET) — proyecto personal para practicar la organización en capas fuera del contexto SAP.",
+      "impact": "arquitectura MVC aplicada de principio a fin"
+    }
   },
   "contact": {
     "eyebrow": "contacto.md",
@@ -104,7 +102,9 @@
       "messagePlaceholder": "Cuéntame un poco sobre el proyecto u oportunidad...",
       "submit": "Enviar mensaje",
       "note": "// este formulario todavía debe conectarse a un backend/servicio de correo",
-      "pendingNotice": "Este formulario todavía no está conectado a un servicio de envío — por ahora, usa el correo o LinkedIn al lado. ✕"
+      "sendingMessage": "Enviando...",
+      "successMessage": "¡Mensaje enviado! Te responderé pronto. ✓",
+      "errorMessage": "No se pudo enviar ahora — inténtalo de nuevo o usa el correo de arriba."
     }
   },
   "footer": {

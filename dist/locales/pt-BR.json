@@ -70,7 +70,6 @@
     "viewLive": "ver projeto",
     "viewCode": "código",
     "confidentialNote": "// projeto interno — telas substituídas por mockups fiéis, sem dados reais",
-    "tagCrossPlatform": "Multiplataforma",
     "p1": {
       "status": "produção · Invent Software",
       "title": "Sistema de gestão financeira desktop integrado ao SAP",
@@ -84,12 +83,11 @@
       "impact": "acesso mobile/web a funcionalidades antes restritas ao desktop"
     },
     "p3": {
-      "status": "em desenvolvimento · projeto pessoal",
-      "title": "Gestão de estoque multiplataforma",
-      "desc": "Aplicação pessoal para controle de estoque, com back-end em Python e front-end em React, pensada para funcionar em mobile e web a partir de uma base de código compartilhada.",
-      "impact": "projeto em construção — detalhes em breve"
-    },
-    "comingSoonNote": "// repositório e link de demonstração em breve"
+      "status": "projeto pessoal",
+      "title": "Sistema de cadastro para lojas (MVC)",
+      "desc": "Sistema de cadastro para lojas construído em C# com arquitetura MVC (ASP.NET) — projeto pessoal para praticar organização em camadas fora do contexto SAP.",
+      "impact": "arquitetura MVC aplicada de ponta a ponta"
+    }
   },
   "contact": {
     "eyebrow": "contato.md",
@@ -104,7 +102,9 @@
       "messagePlaceholder": "Conte um pouco sobre o projeto ou oportunidade...",
       "submit": "Enviar mensagem",
       "note": "// este formulário ainda precisa ser conectado a um backend/serviço de e-mail",
-      "pendingNotice": "Este formulário ainda não está conectado a um serviço de envio — por enquanto, use o e-mail ou LinkedIn ao lado. ✕"
+      "sendingMessage": "Enviando...",
+      "successMessage": "Mensagem enviada! Retorno em breve. ✓",
+      "errorMessage": "Não foi possível enviar agora — tente de novo ou use o e-mail acima."
     }
   },
   "footer": {
